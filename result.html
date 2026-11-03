@@ -85,7 +85,7 @@
         <div class="stolen-box">
             <h3>🚨 البيانات اللي "طاحت معك بالجحر":</h3>
             <div class="field">• الاسم: <strong id="displayName">---</strong></div>
-            <div class="field">• رقم البادج: <strong id="displayBadge">---</strong></div>
+            <div class="field">• رقم الهاتف: <strong id="displayPhone">---</strong></div>
         </div>
 
         <div class="footer-advice">
@@ -96,11 +96,11 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const name = urlParams.get('name') || 'المستخدم';
-        const badge = urlParams.get('badge') || '---';
+        const Phone = urlParams.get('Phone') || '---';
 
         document.getElementById('userName').innerText = name;
         document.getElementById('displayName').innerText = name;
-        document.getElementById('displayBadge').innerText = badge;
+        document.getElementById('displayPhone').innerText = Phone;
     </script>
 </body>
 </html>
